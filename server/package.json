@@ -17,5 +17,8 @@
     "start": "nodemon index.js"
   },
   "author": "Jonas DELLOUH",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": ">=14.20.1"
+  }
 }
