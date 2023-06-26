@@ -12,7 +12,7 @@ const path = require("path");
 dotenv.config();
 app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")))
-
+app.get("/", (req, res) => res.send("Welcome to the Users API!"));
 
 mongoose.connect("mongodb+srv://JonasDELLOUH:jonas1007@jonasdellouh.4f1abh2.mongodb.net/?retryWrites=true&w=majority", {
     useNewUrlParser: true,
